@@ -1,0 +1,132 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@font-face {
+    font-family: 'digital-7';
+    src: url('digital-7.ttf') format('truetype');}
+
+
+body {
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin:0;
+    font-family: 'NanumSquareNeo';
+}
+
+#clock {
+    position:fixed;
+    top: 50px;
+    background-color: rgba(255,255,255, 0.5);
+    color: black;
+    width:12vw;
+    text-align: center;
+    font-size:50px;
+    border-radius: 40px;
+    font-family: 'digital-7', sans-serif;}
+
+#greeting{
+    color:white;
+    position:fixed;
+    top:250px;
+    background-color:rgba(0,0,0,0.7);
+    padding: 0px 15px;
+    border-radius: 40px;
+    font-size: 25px;
+}
+
+#todo-form{
+    position:fixed;
+    bottom:100px;
+    width:20vw;
+}
+
+#todo-form li{
+    color:white;
+    padding-top:5px;
+}
+
+#todo-form input {
+    font-size:15px;
+}
+
+#quote {
+    color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:rgba(0,0,0,0.7);
+    margin-top:300px;
+    padding:15px;
+    border-radius:10px;
+}
+#quote span {
+    margin-top:10px;
+}
+
+#weather {
+    position:fixed;
+    right:5px;
+    top:10px;
+}
+
+#weather span {
+    color:rgba(255,255,255,0.9);
+    margin: 20px 20px 0px 0px;
+
+}
+
+.greetingbox {
+    display:flex;
+    width:30vw;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.hidden{
+    display:none;
+}
+
+.greeting__name{
+    margin-top:10px;
+    font-size:40px;
+    width:20vw;
+    text-align:center;
+    margin-bottom:50px;
+    background-color:rgba(0,0,0,0.7);
+    border: none;
+    outline: none;
+    color:rgba(255,255,255);
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.greeting__name::placeholder{
+    color:rgba(255,255,255,0.3);}
+
+
+.greeting__name:focus {
+    background-color: rgba(0, 0, 0, 0.9); 
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+img {
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+
+li {
+    padding-left: 20px;
+}
+
+li button {
+    background-color:transparent;
+    margin-left:12px;
+    border: none;
+}

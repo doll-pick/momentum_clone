@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum App</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form class="hidden" id="login-form">
+      <div class="greetingbox">
+        <input
+          class="greeting__name"
+          type="text"
+          required
+          maxlength="15"
+          placeholder="How can I call you?"
+        />
+      </div>
+    </form>
+    <h2 id="clock">00:00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <form id="todo-form">
+      <input
+        class="input is-rounded is-medium"
+        type="text"
+        placeholder="Write a To do and Press Enter"
+        required
+      />
+      <ul id="todo-list"></ul>
+    </form>
+
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
